@@ -1,0 +1,217 @@
+/*the whole body styling making it defaulting my needs*/
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-size: 14pt;
+    font-family: 'Times New Roman';
+}
+
+html, body{
+    height: 100%;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+header{
+    overflow: hidden;
+}
+
+.container{
+    margin: 0px auto;
+}
+
+.top-header{
+    text-align: center;
+    height: 60px;
+}
+/*logo will be added later with this style. Subject to change*/
+#logo{
+    float: left;
+    padding: none;
+    margin: none;
+    height: 60px;
+    width: 30%;
+    background: red;
+}
+
+#logo img{
+    width: 60%;
+    float: left;
+    padding: 10px 0px;
+}
+/*My menu styling goes here*/
+.menu{
+    float: right;
+    width: 70px;
+    height: 100%;
+    margin: none;
+}
+
+.menu ul{
+    text-align: center;
+    float: right;
+    margin: none;
+    background: #0074d9;
+}
+
+.menu li{
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+
+.menu li a, .menu li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+
+.menu li a{
+    color: #fff;
+}
+
+.menu li:hover a, .menu li span{
+    background: #fff;
+    color: #0074D9;
+    border-left: 1px solid #0074D9;
+    text-decoration: none;
+}
+
+/*the header image styling if comes off*/
+
+#header-image-menu{
+    top: 10px;
+    position: relative;
+}
+ 
+#header-image-menu img{
+    width: 100%;
+    margin: none;
+    padding: none;
+    background-color: #0074d9;
+}
+ 
+#image-text{
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+    transform: translate(-30%, -30%);
+    text-align: center;
+}
+
+/*section 1 stylings*/
+
+.welcome{
+    overflow: hidden;
+    width: 1000px; /*may set it to 1000*/
+    margin: 0px auto;
+}
+
+.welcome .title{
+    margin-top:20px;
+    padding: 20px;
+    text-align: center;
+    color: rgb(36, 107, 170);
+    text-decoration: underline;
+}
+.welcome p{
+    margin-bottom:40px;
+    text-align: center;
+}
+
+/*Making section 2 defaulting style*/
+#section-2{
+    overflow: hidden;
+    margin-top: 5em;
+    padding-top: 1em;
+    border-top: 1px solid rgba(0,0,0,0.09);
+    text-align: center;
+}
+
+/*Making each row and column fit into something like a section
+so that maybe tomorrow I can add more things. */
+.row #column1,
+.row #column2,
+.row #column3
+{
+    float: left;
+    width: 350px;
+    padding: 80px 40px 80px 40px;
+} 
+
+/*Section 2 head styling*/
+
+.column-title{
+    margin: 1em;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+
+/* making the links a button*/
+
+.button{
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5em;
+    background-color: #0074d9;
+    border-style: none;
+    color:white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.button:hover{
+    background-color: blue;
+}
+
+#footer #icon{ 
+    display: block;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+.copyright{
+    overflow: hidden;
+    padding: 0.5em;
+    border-top: 20px solid rgb(224, 224, 224);
+    text-align: center;
+    background: #333;
+}
+.copyright p{
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.8);
+}
+.copyright a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+ul.contact{
+    padding: 2em 0em 0em 0em;
+    list-style: none;
+}
+ul.contact li{
+    display: inline-block;
+    padding: 0em 0.10em;
+    font-size: 1em;
+}
+ul.contact li a{
+    color: #FFF;
+    background: #0074d9;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
