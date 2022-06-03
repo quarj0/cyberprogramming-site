@@ -200,6 +200,7 @@ so that maybe tomorrow I can add more things. */
 ul.contact{
     padding: 2em 0em 0em 0em;
     list-style: none;
+    
 }
 ul.contact li{
     display: inline-block;
@@ -215,3 +216,5 @@ ul.contact li a{
     line-height: 40px;
     text-align: center;
 }
+
+
