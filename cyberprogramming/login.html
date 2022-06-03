@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>
+        Login
+    </title>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://www.pabbly.com/wp-content/themes/pabbly-new/assets/imgs/favicon.png" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/styles/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/fonts/stylesheet.css">
+
+<link rel="stylesheet" type="text/css" href="/styles/style.css">
+<script type="bac854f1328bb218cc95346a-text/javascript">
+        window.heap = window.heap || [], heap.load = function (e, t) { window.heap.appid = e, window.heap.config = t = t || {}; var r = t.forceSSL || "https:" === document.location.protocol, a = document.createElement("script"); a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + e + ".js"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(a, n); for (var o = function (e) { return function () { heap.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < p.length; c++)heap[p[c]] = o(p[c]) };
+        heap.load("490363613");
+    </script>
+
+
+</head>
+<body class="signup-page-container">
+<div class="login-wrapper">
+<div id="top_header" class="login-header-container">
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-sm-6 col-xs-12">
+<div class="pabbly-logo">
+<a href="https://pabbly.com" target="_blank"><img src="/images/logo-login-black.png" /></a>
+</div>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12">
+<div class="header-description-container">
+<p class="login-text">Don't have a Pabbly Account yet?</p>
+<a href="/signup" class="btn btn-success create-account-btn">Create Account</a>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<div class="login-form-container">
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-sm-6">
+<div class="login-info-container hidden-xs">
+<div class="login-details-container">
+<h1 class="login-heading">Login to Pabbly</h1>
+<p class="login-description">Login in seconds. No credit card required.</p>
+</div>
+<div class="login-img-container">
+<img src="/images/signup-img.png" />
+</div>
+</div>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12 col-sm-12">
+<div class="login-form-wrapper authn-form">
+<div class="login-container float-right">
+<section class="login-form-section">
+<form method="post" action="https://accounts.pabbly.com/login">
+<h1 class="login-head">Login</h1>
+<a href="/auth/google/" class="google-sign-up google-register">
+<img src="/images/google.png" alt=" ">
+<span>Sign in with Google</span>
+</a>
+<div class="google-or-text"><span>OR</span></div>
+<div class="form-group">
+<input type="email" class="form-control" name="email" placeholder="Email" value="" required />
+<input type="password" class="form-control" name="password" placeholder="Password" required />
+</div>
+<div>
+<button type="submit" class="btn btn-success submit btn-login-account">Log
+in</button>
+
+</div>
+<div class="clearfix"></div>
+<div class="pabbly-signin-text">
+<p>Unable to Login?<a href="/forgotpassword" class="to_register">
+Forgot Password </a></p>
+</div>
+<div class="clearfix"></div>
+<input type="hidden" name="s" value="" />
+<input type="hidden" name="pl" value="" />
+<input type="hidden" name="iframe" value="" />
+<input type='hidden' name='_csrf' value='qPDZ3fLr-cOCqHjlGNQJVlIxRChsM6AhyKVQ'>
+</form>
+</section>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" type="bac854f1328bb218cc95346a-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" type="bac854f1328bb218cc95346a-text/javascript"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" type="bac854f1328bb218cc95346a-text/javascript"></script>
+<script type="bac854f1328bb218cc95346a-text/javascript">
+            $(document).ready(function () {
+                $('#signup').on('submit', function () {
+                    $('.loader-display').css('display', 'block');
+                });
+            });
+        </script>
+<script type="bac854f1328bb218cc95346a-text/javascript">
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 72) {
+                    $('#top_header').addClass('sticky');
+                }
+                else {
+                    $('#top_header').removeClass('sticky');
+                }
+            });
+            window.onscroll = function () {
+                //pabblyAddSticky() 
+            };
+            var header = document.getElementById("top_header");
+            var sticky = header.offsetTop;
+            function pabblyAddSticky() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="bac854f1328bb218cc95346a-|49" defer=""></script></body>
+</html>
