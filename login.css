@@ -1,0 +1,147 @@
+/*body css*/ 
+body{
+    margin: 0%;
+    padding: 0%;
+    font-size: 14pt;
+    background: #ffffff;
+    font-family: 'Times New Roman';
+}
+
+html, body{
+    height: 100%;
+}
+
+h1,h2, h3{
+    margin: 0;
+    padding: 0;
+    color: #404040;
+}
+
+p, ol, ul{
+    margin-top: 0;
+}
+
+p{
+    line-height: 180%;
+}
+
+ol, ul{
+    padding: 0;
+    list-style: none;
+}
+
+
+
+/*fieldset and forms*/
+.cyber{
+    width: 60%;
+    margin-left: 8em;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 2%;
+}
+
+.h2class, .cybertext{
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Bad Script', cursive;
+    padding: 10px;
+}
+
+.form-div{
+    text-align: center;
+    margin-top: 15px;
+}
+
+#loga{
+    margin: 20px;
+    padding: 10px;
+    background-color: #0074d9;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+}
+#loga:hover{
+    background: red;
+}
+
+
+
+h3{
+    margin-bottom: 40px;
+    font-family:  monospace;
+    margin-left: 20px;
+}
+
+.login-btn{
+ 
+    font-family: 'Poppins';
+    color: #FFF;
+    background-color: #0074d9;
+    border: none;
+    width: 50%;
+    font-size: 20px;
+    padding: 10px 20px  10px 20px;
+    cursor: pointer;
+    margin-bottom: 5%;
+    
+}
+.login-btn:hover{
+background-color: #0d11e0;
+color: white;
+transition: 0.15s;
+}
+
+input{
+    width: 70%;
+    margin: 0px 20px 0px 20px;
+    padding: 0.5em;
+    border-style: none;
+    border:none;
+    background-color: #333;
+    font-size: 20px;
+    color: white;
+}
+
+/*footer*/
+#footer #icon{ 
+    display: block;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+.copyright{
+    overflow: hidden;
+    padding: 0.5em;
+    border-top: 20px solid rgb(224, 224, 224);
+    text-align: center;
+    background: #333;
+}
+.copyright p{
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.8);
+}
+.copyright a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+ul.contact{
+    padding: 2em 0em 0em 0em;
+    list-style: none;
+}
+ul.contact li{
+    display: inline-block;
+    padding: 0em 0.10em;
+    font-size: 1em;
+}
+ul.contact li a{
+    color: #FFF;
+    background: #0074d9;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
