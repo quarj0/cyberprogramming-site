@@ -132,7 +132,7 @@ header{
     overflow: hidden;
     margin-top: 5em;
     padding-top: 1em;
-    border-top: 1px solid rgba(0,0,0,0.09);
+    border-top: 2px solid rgba(0,0,0,0.15);
     text-align: center;
 }
 
@@ -143,7 +143,7 @@ so that maybe tomorrow I can add more things. */
 .row #column3
 {
     float: left;
-    width: 350px;
+    width: 340px;
     padding: 80px 40px 80px 40px;
 } 
 
@@ -200,6 +200,7 @@ so that maybe tomorrow I can add more things. */
 ul.contact{
     padding: 2em 0em 0em 0em;
     list-style: none;
+    
 }
 ul.contact li{
     display: inline-block;
@@ -215,3 +216,5 @@ ul.contact li a{
     line-height: 40px;
     text-align: center;
 }
+
+
