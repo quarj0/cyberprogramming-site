@@ -4,6 +4,7 @@ body{
     margin: 0%;
     padding: 0%;
     font-size: 14pt;
+    background: #ffffff;
     font-family: 'Times New Roman';
 }
 
@@ -11,7 +12,22 @@ html, body{
     height: 100%;
 }
 
+h1,h2, h3{
+    margin: 0;
+    padding: 0;
+    color: #404040;
+}
+
+p, ol, ul{
+    margin-top: 0;
+}
+
+p{
+    line-height: 180%;
+}
+
 ol, ul{
+    padding: 0;
     list-style: none;
 }
 
@@ -34,7 +50,6 @@ header{
     margin: none;
     height: 60px;
     width: 30%;
-    background: red;
 }
 
 #logo img{
@@ -42,28 +57,34 @@ header{
     float: left;
     padding: 10px 0px;
 }
+
+.logo-text{
+    font-size: .5em;
+    left: 20px;
+    top: 20px;
+}
 /*My menu styling goes here*/
-.menu{
+#menu{
     float: right;
     width: 70px;
     height: 100%;
     margin: none;
 }
 
-.menu ul{
+#menu ul{
     text-align: center;
     float: right;
     margin: none;
     background: #0074d9;
 }
 
-.menu li{
+#menu li{
     display: inline-block;
     padding: none;
     margin: none;
 }
 
-.menu li a, .menu li span{
+#menu li a, #menu li span{
     display: inline-block;
     padding: 0em 1.5em;
     text-decoration: none;
@@ -72,59 +93,38 @@ header{
 }
 
 
-.menu li a{
+#menu li a{
     color: #fff;
 }
 
-.menu li:hover a, .menu li span{
+#menu li:hover a, #menu li span{
     background: #fff;
     color: #0074D9;
     border-left: 1px solid #0074D9;
     text-decoration: none;
 }
 
-/*the header image styling if comes off*/
-
-#header-image-menu{
-    top: 10px;
-    position: relative;
-}
- 
-#header-image-menu img{
-    width: 100%;
-    margin: none;
-    padding: none;
-    background-color: #0074d9;
-}
- 
-#image-text{
-    position: absolute;
-    top: 60%;
-    left: 60%;
-    font-family: 'Times New Roman', Times, serif;
-    color: #000;
-    transform: translate(-30%, -30%);
-    text-align: center;
-}
-
-/*section 1 stylings*/
-
+/*welcome*/
 .welcome{
     overflow: hidden;
-    width: 1000px; /*may set it to 1000*/
+    width: auto; /*may set it to 1000*/
     margin: 0px auto;
 }
 
 .welcome .title{
     margin-top:20px;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     text-align: center;
-    color: rgb(36, 107, 170);
-    text-decoration: underline;
+    color: rgb(231, 235, 238);
+    background-color: #333;
 }
 .welcome p{
     margin-bottom:40px;
     text-align: center;
+}
+
+#slogan{
+    font-size: 0.5em;
 }
 
 /*Making section 2 defaulting style*/
