@@ -1,0 +1,123 @@
+/*Sig up page*/
+*{
+    box-sizing: border-box;
+}
+
+.form-container{
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    margin-left: 30px;
+}
+
+.form-container input[type=text], .form-container input[type=password],.form-container input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  .form-container input[type=text]:focus, 
+  .form-container input[type=password]:focus,
+  .form-container input[type=email]:focus{
+background-color: #ddd;
+outline: none;
+  }
+
+  .form-container .submit {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+
+  .form-container .submit:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  .open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+margin-top: 20%;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .signup-form {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+
+  .form-container .cancel {
+    background-color: red;
+  }
+
+  .signup-form {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+
+  /*footer again*/
+
+  #footer #icon{ 
+    display: block;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+.copyright{
+    margin-top: 30%;
+    overflow: hidden;
+    padding: 0.5em;
+    border-top: 20px solid rgb(224, 224, 224);
+    text-align: center;
+    background: #333;
+}
+.copyright p{
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.8);
+}
+.copyright a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+ul.contact{
+    padding: 2em 0em 0em 0em;
+    list-style: none;
+}
+ul.contact li{
+    display: inline-block;
+    padding: 0em 0.10em;
+    font-size: 1em;
+}
+ul.contact li a{
+    bottom: 0;
+    color: #FFF;
+    background: #0074d9;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}

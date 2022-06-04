@@ -171,10 +171,12 @@ so that maybe tomorrow I can add more things. */
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
+
 .button:hover{
     background-color: blue;
+    cursor: pointer;
 }
-
+/*footer*/
 #footer #icon{ 
     display: block;
     margin-bottom: 1em;
@@ -216,5 +218,3 @@ ul.contact li a{
     line-height: 40px;
     text-align: center;
 }
-
-
