@@ -1,6 +1,7 @@
 /*the whole body styling making it defaulting my needs*/
 
 body{
+    background: #404040;
     margin: 0%;
     padding: 0%;
     font-size: 14pt;
@@ -10,12 +11,14 @@ body{
 
 html, body{
     height: 100%;
+    background: #404040;
+    color: #fff;
 }
 
 h1,h2, h3{
     margin: 0;
     padding: 0;
-    color: #404040;
+    color: #ffff;
 }
 
 p, ol, ul{
@@ -75,7 +78,7 @@ header{
     text-align: center;
     float: right;
     margin: none;
-    background: #0074d9;
+   /* background: #0074d9;*/
 }
 
 #menu li{
@@ -217,4 +220,7 @@ ul.contact li a{
     height: 40px;
     line-height: 40px;
     text-align: center;
+}
+#contact{
+    color: rgb(223, 215, 215);
 }
