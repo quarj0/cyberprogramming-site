@@ -1,0 +1,16 @@
+{
+    "Signup":[
+        {
+            "firstname":""
+        },
+        {
+            "lastname":""
+        },
+        {
+            "email":""
+        },
+        {
+            "password":""
+        }
+    ]
+}

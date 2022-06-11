@@ -9,12 +9,13 @@ body{
 
 html, body{
     height: 100%;
+    background: #404040;
 }
 
 h1,h2, h3{
     margin: 0;
     padding: 0;
-    color: #404040;
+    color: #FFF;
 }
 
 p, ol, ul{
