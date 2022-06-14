@@ -7,7 +7,7 @@ burger.addEventListener("click", function(){
   menuSidebar.style.transform = "translate(0%)"
 })
 
-closeMenu.addEventListener("clcik", function(){
+closeMenu.addEventListener("click", function(){
   menuSidebar.style.transform = "translate(-100%)"
 })
 
