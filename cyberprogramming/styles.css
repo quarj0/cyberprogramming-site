@@ -1,50 +1,81 @@
-/*the whole body styling making it defaulting my needs*/
-
-body{
-    margin: 0%;
-    padding: 0%;
-    font-size: 14pt;
-    background: #ffffff;
-    font-family: 'Times New Roman';
-}
-
-html, body{
-    height: 100%;
-}
-
-h1,h2, h3{
+*{
     margin: 0;
     padding: 0;
-    color: #404040;
+    font-size: 20px;
+    box-sizing: border-box;
 }
 
-p, ol, ul{
-    margin-top: 0;
+html{
+    scroll-behavior: smooth;
 }
 
-p{
-    line-height: 180%;
+a{
+    color: black;
+    text-decoration: none;
 }
 
-ol, ul{
-    padding: 0;
+ul{
     list-style: none;
 }
 
-header{
-    overflow: hidden;
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 10vh;
+    background-color: #ececec; 
+}
+
+
+.menubar{
+    width: 45%;
+    margin-left: 8.5em;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-tems a{
+    font-family: sans-serif;
+    font-size: 0.9em;
+    transition: 0.4s;
+}
+
+.burger{
+    height: 28px;
+    width: 32px;
+    display: none;
+}
+
+.layer1, .layer2, .layer3{
+    background: black;
+    height: 4px;
+    margin-top: 4px;
+    width: 30px;
+    border-radius: 10px;
+}
+
+.menu-sidebar{
+    display: none;
+}
+
+.fa-times{
+    margin-top: 0.5em;
 }
 
 .container{
     margin: 0px auto;
 }
 
-.top-header{
+/* .top-header{
     text-align: center;
     height: 60px;
-}
+} */
 /*logo will be added later with this style. Subject to change*/
-#logo{
+.logo{
     float: left;
     padding: none;
     margin: none;
@@ -52,7 +83,7 @@ header{
     width: 30%;
 }
 
-#logo img{
+.logo img{
     width: 60%;
     float: left;
     padding: 10px 0px;
@@ -63,45 +94,31 @@ header{
     left: 20px;
     top: 20px;
 }
-/*My menu styling goes here*/
+/* My menu styling goes here
 #menu{
     float: right;
     width: 70px;
     height: 100%;
     margin: none;
+} */
+
+img{
+    width: 10%;
+    border-radius: 100%;
+    margin-left: 10px; 
 }
 
-#menu ul{
-    text-align: center;
-    float: right;
-    margin: none;
+h5{
+    margin-left: 15px;
+    margin-top: 0px;
+}
+
+
+li a:hover{
     background: #0074d9;
-}
-
-#menu li{
-    display: inline-block;
-    padding: none;
-    margin: none;
-}
-
-#menu li a, #menu li span{
-    display: inline-block;
-    padding: 0em 1.5em;
-    text-decoration: none;
-    font-weight: 600;
-    line-height: 40px;
-}
-
-
-#menu li a{
     color: #fff;
-}
-
-#menu li:hover a, #menu li span{
-    background: #fff;
-    color: #0074D9;
-    border-left: 1px solid #0074D9;
-    text-decoration: none;
+    /* margin: 20px 16px; */
+    padding: 10px;
 }
 
 /*welcome*/
@@ -176,6 +193,86 @@ so that maybe tomorrow I can add more things. */
     background-color: blue;
     cursor: pointer;
 }
+
+/* At phones screen */
+
+@media screen and (max-width:768px) {
+    .menubar{
+        display: none;
+    }
+    .burger{
+        margin-left: 2em;
+        display: block;
+    }
+    .burger:hover{
+        cursor: pointer;
+    }
+    
+    #section2 .title h1{
+        font-size: 1.5em;
+    }
+    .menu-sidebar{
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: #ececec;
+        z-index: 11;
+        overflow: hidden;
+        transform: translate(-100%);
+        transition: 0.3s linear;
+    }
+
+    .menu-menubar{
+        display: flex;
+        height: 80%;
+        justify-content: center;
+    }
+    .menu-list{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu-sidebar .closemenu{
+    position: absolute;
+    right: 30px;
+    font-size: 1.4em;
+}
+
+.menu-list-items a{
+    color: #fff;
+}
+.menu-list-items a:hover
+{
+    color: #0074d9;
+}
+}
+
+@media screen and (max-width: 480px) {
+    *{
+        font-size: 16px;
+    }
+
+    .burger{
+        margin-left: 1em;
+        display: block;
+        width: 30px;
+    }
+    .burger:hover{
+        cursor: pointer;
+    }
+
+}
+
+
+
+
+
+
 /*footer*/
 #footer #icon{ 
     display: block;
@@ -217,4 +314,7 @@ ul.contact li a{
     height: 40px;
     line-height: 40px;
     text-align: center;
+}
+#contact{
+    color: rgb(223, 215, 215);
 }
