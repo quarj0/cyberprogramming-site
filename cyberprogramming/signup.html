@@ -16,42 +16,44 @@
     <title>Sign up</title>
 </head>
 <body>
-    <h4>Please click the sign up button to fill it up.</h4>
+    <h4 id="fillform">Please click the sign up button below.</h4>
     <p>Please kindly read any terms and conditions before signing up for anything with your account.
         Your privacy also matters to us. 
     Thank you for your time. </p>
+   <section ]>
     <button class="open-button" onclick="openForm()">Sign up</button>
-    <main class="signup-form" id="form">
-        <form action="login.html" method="post" class="form-container" >
-            <div id="div1">
-                <label for="firstname">First Name</label><br>
-                <input type="text" name="firstname" id="firstname" onfocus="this.value=''"  placeholder="eg. Christwise" required>
-            </div>
-<br>
-            <div id="2">
-                <label for="lasttname">Last Name</label><br>
 
-                <input type="text" name="lastname" id="lastname" onfocus="this.value=''" placeholder="eg. Morrison" required>
+   </section>
+    
+    <main class="signup-form" id="form">
+        <form action="/login.html" method="post" class="form-container" onsubmit="return ycodes()">
+
+            <div id="div1">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname"  placeholder="eg. Christwise" >
             </div>
-            <br>
+
+            <div id="2">
+                <label for="lasttname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" placeholder="eg. Morrison" >
+            </div>
+
             <div class="div3">
                 <label for="email">Email</label><br>
-<input type="email" name="email" id="email" placeholder="email" onfocus="this.value=''"  required>
+                <input type="email" name="email" id="email" placeholder="email"  >
             </div>
 
             <br>
             <div class="div4">
                 <label for="password">Password</label><br>
-                <input type="password" name="password" id="password" onfocus="this.value=''" placeholder="password" required>
+                <input type="password" name="password" id="password" placeholder="password" >
             </div>
 <button type="submit" class="submit">Sign up</button>
 <button type="button" class="submit cancel" onclick="closeForm()">Close</button>
 <br>
-            <div class="ordiv">
-                OR
-            </div>
+            
             <br>
-            <div class="">
+            <div class="google">
                 <a href="#" class="fa fa-google"> Sign up with Google</a>
             </div>
         </form>
@@ -73,10 +75,13 @@
                     <a href="https://www.linkedin.com/in/kwadwo-owusu-ansah-27281a218/" class="fa fa-linkedin-square"></a>
                 </li>
             </ul>
-            <a href="#">Terms & Condtions</a>
-            <a href="#">Privacy policy</a>
+            <p>By using cyberprogramming you have read and agreed to 
+                <a href="#">Terms & Condtions</a> and <a href="#">Privacy policy</a> and the use of <a href="#cookies">cookies</a>.
+          </p>
             <p>&copy; Cyber Programming. All rights reserved.</p>
         </div>
             </footer>
+<script src="functionality.js"></script>
+<script src="json/Logons.json"></script>
 </body>
 </html>

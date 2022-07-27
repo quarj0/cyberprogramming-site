@@ -9,12 +9,13 @@ body{
 
 html, body{
     height: 100%;
+    background: #404040;
 }
 
 h1,h2, h3{
     margin: 0;
     padding: 0;
-    color: #404040;
+    color: #FFF;
 }
 
 p, ol, ul{
@@ -66,6 +67,7 @@ ol, ul{
     background: red;
 }
 
+
 #ycodes{
     font-family: 'Poppins';
     font-size: 14px;
@@ -104,8 +106,28 @@ color: white;
 transition: 0.15s;
 }
 
+
+.form-div input[type=email], .form-div input[type=password] {
+    width: fit-content;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  .form-div input[type=text]:focus, 
+  .form-div input[type=email]:focus{
+background-color: #ddd;
+outline: none;
+  }
+
+
+
+
+
+
 input{
-    
+    outline: none;
     margin: 0px 20px 0px 20px;
     padding: 0.5em;
     border-style: none;
